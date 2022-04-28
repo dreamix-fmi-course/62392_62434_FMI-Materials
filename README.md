@@ -1,4 +1,4 @@
-# 62392_62434_FMI-Materials
+# FMI Materials
 
 ## Authors: Mario Nikolov and Georgi Boychev
 ## Faculty Numbers: 62392 and 62434
