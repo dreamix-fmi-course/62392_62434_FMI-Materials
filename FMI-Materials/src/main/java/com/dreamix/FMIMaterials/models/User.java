@@ -22,13 +22,11 @@ public class User {
     @Column(nullable = false, length = 40)
     private String email;
 
-    @Autowired
-    private UserRole userRole;
 
     public User() {
     }
 
-    public User(Long id, String email, String userName, UserRole userRole) {
+    public User(Long id, String email, String userName) {
         this.id = id;
         this.userName = userName;
         this.email = email;
