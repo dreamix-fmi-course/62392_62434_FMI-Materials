@@ -5,8 +5,7 @@ import org.springframework.stereotype.Component;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity
-@Table(name = "groups")
+@Entity(name = "group")
 public class Group {
     @Id
     private long id;

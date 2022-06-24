@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/users")
+    @GetMapping("/all-users")
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
@@ -22,6 +22,11 @@ public class UserController {
     @PostMapping("/user")
     public void addUser(@RequestBody User user) {
         userService.addUser(user);
+    }
+
+    @GetMapping("/test1")
+    public String dummyGet() {
+        return "test1234";
     }
 //
 //    @DeleteMapping(path = "{id}")

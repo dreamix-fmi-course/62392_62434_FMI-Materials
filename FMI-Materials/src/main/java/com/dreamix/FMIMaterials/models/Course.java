@@ -2,16 +2,14 @@ package com.dreamix.FMIMaterials.models;
 
 import org.springframework.stereotype.Component;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity(name = "course")
 public class Course {
     @Id
     private long id;
 
+    @Column(nullable = false, length = 40)
     private String name;
 
     @ManyToOne
