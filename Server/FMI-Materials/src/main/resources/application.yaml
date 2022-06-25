@@ -1,17 +1,18 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    jdbc-url: jdbc:mysql://localhost:3306/fmimaterials
-    username: fmimaterials
-    password: FMIMaterials
+    jdbc-url: jdbc:mysql://localhost:3306/library
+    username: root
+    password: p
     hikari:
-      jdbc-url: jdbc:mysql://localhost:3306/fmimaterials
+      jdbc-url: jdbc:mysql://localhost:3306/library
   jpa:
+    generate-ddl: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
