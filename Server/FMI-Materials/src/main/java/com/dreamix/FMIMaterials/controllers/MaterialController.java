@@ -2,11 +2,13 @@ package com.dreamix.FMIMaterials.controllers;
 
 import com.dreamix.FMIMaterials.models.Material;
 import com.dreamix.FMIMaterials.repositories.services.MaterialRepositoryService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
+@Api(tags="Material Controller")
 @RestController
 @RequestMapping("/material")
 public class MaterialController {

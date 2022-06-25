@@ -2,17 +2,21 @@ package com.dreamix.FMIMaterials.controllers;
 
 import com.dreamix.FMIMaterials.models.Course;
 import com.dreamix.FMIMaterials.repositories.services.CourseRepositoryService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.SwaggerDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
+@Api(tags="Course Controller")
 @RestController
 @RequestMapping("/courses")
 public class CourseController {
 
     @Autowired
     private CourseRepositoryService service;
+
 
     @GetMapping("/all")
     public Iterable<Course> getAllCourses(){
