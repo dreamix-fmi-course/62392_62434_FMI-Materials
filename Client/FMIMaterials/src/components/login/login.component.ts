@@ -1,7 +1,5 @@
-import { User } from './../../models/user';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +7,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
- 
+
   private _users:any;
 
   get users(){
@@ -22,12 +20,12 @@ export class LoginComponent implements OnInit {
   }
 
   getUsers() {
-    let url:string = "http://localhost:8080/users/{users}";
+    let url:string = "http://localhost:8080/users/all";
     this._users =  this.http.get(url);
   }
 
   login(){
-    
+
   }
 
 }
