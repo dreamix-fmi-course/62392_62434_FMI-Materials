@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "0381da26-42e9-46cc-b639-04f7a9935116",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20815968"
+	},
+	"item": [
+		{
+			"name": "POST user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\" : \"Mario Nikolov\",\r\n    \"email\" : \"test@mail.bg\",\r\n    \"passwd\" : \"bam_bam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user"
+					]
+				},
+				"description": "POST Request for users"
+			},
+			"response": []
+		},
+		{
+			"name": "GET all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/user/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE user by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/user/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
